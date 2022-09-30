@@ -2,7 +2,7 @@ import { Workbox } from 'workbox-window';
 import Editor from './editor';
 import './database';
 import '../css/style.css';
-import { registerSW } from './register-sw';
+//import { registerSW } from './register-sw';
 
 
 const main = document.querySelector('#main');
