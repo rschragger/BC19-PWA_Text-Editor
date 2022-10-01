@@ -4,7 +4,6 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    //https://stackoverflow.com/questions/39457619/webpack-not-found-deploying-to-heroku
     "heroku-prebuild": "npm install --dev",
     "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
     "start": "npm run build && cd server && node server.js",
