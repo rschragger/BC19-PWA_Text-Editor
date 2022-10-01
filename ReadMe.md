@@ -1,4 +1,4 @@
-# BC19-PWA_Text-Editor
+# BC19 - PWA Text Editor
 
   ## Description
   
@@ -14,9 +14,7 @@
   - [License](#license)
   - [Features](#features)
       - [Contributions](#contributions)
-  - [Tests](#tests)
-  - [Questions](#questions)
-      - [Contacts](#contacts)
+  - [Contacts](#contacts)
   
   ## Installation
    
@@ -24,29 +22,29 @@
   - Fork/Clone from github
   - Run `npm install` from command line
 - Run `npm start` from command line. This will build and start all parts of the app
-  
-  ## Usage
-   
+  </p>
+
+## Usage 
   Usage Instructions:
 - Run `npm start` to startup
 - Open Liveserver from http://127.0.0.1:5500/client/dist/index.html 
 -  Write text in browser
 </p>
-  
-  ## Credits
+
+## Credits
    
   Collaborators N/A
+</p>
 
- #### Languages
+## Languages
 - JavaScript
 - Node
 - Express
 - Webpack
 - idb
 </p>
-</p>
   
-  ####Third Party Assets 
+## Third Party Assets 
   Node modules
   - concurrently
   - nodemon
@@ -59,6 +57,7 @@
   - css-loader
   - html-webpack-plugin
   - http-server
+  - path
   - style-loader
   - webpack
   - webpack-cli
@@ -67,25 +66,21 @@
   - workbox-webpack-plugin
   
   Tutorials Stack Overflow
-  
-  ## License
+  </p>
+
+## License
    
   This application is licensed under Creative Commons
 
   CC0
-  
-  ## Features
-   
-  
-  ### Contributions
+  </p>
+
+## Features
+</p>
+
+### Contributions
    
   Contribution guidelines: Student project only
-  
-  ## Tests
-  
-  
-  
-  ## Questions
    
   
   ### Contacts

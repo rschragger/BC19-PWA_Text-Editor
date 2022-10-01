@@ -2,7 +2,7 @@ import { Workbox } from 'workbox-window';
 import Editor from './editor';
 import './database';
 import '../css/style.css';
-//import { registerSW } from './register-sw';
+//import { registerSW } from './register-sw'; //try this instead - same result, use original
 
 
 const main = document.querySelector('#main');
@@ -28,10 +28,11 @@ if (typeof editor === 'undefined') {
 // Check if service workers are supported
 if ('serviceWorker' in navigator) {
   // register workbox service worker
-  const workboxSW = new Workbox('/src-sw.js');
+  const workboxSW = new Workbox('./src-sw.js');
   workboxSW.register();
 
-  //  registerSW();
+  //  registerSW();//try this instead - same result, use original
+
 } else {
   console.error('Service workers are not supported in this browser.');
 }

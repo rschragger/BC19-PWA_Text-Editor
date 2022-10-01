@@ -24,11 +24,25 @@ module.exports = () => {
         template: './index.html',
         title: 'Contact Cards'
       }),
-     
+
       // Injects our custom service worker
       new InjectManifest({
         swSrc: './src-sw.js',
         swDest: 'src-sw.js',
+
+
+        // swSrc: path.join(process.cwd(), '/app/resources/service-worker.js'),
+        // swDest: 'sw.js',
+        // exclude: [
+        //   /\.map$/,
+        //   /manifest$/,
+        //   /\.htaccess$/,
+        //   /src-sw\.js$/,
+        //   /service-worker\.js$/,
+        //   /sw\.js$/,
+        // ],
+
+
       }),
 
       // Creates a manifest.json file.
@@ -53,6 +67,8 @@ module.exports = () => {
     ],
 
     module: {
+      //target: "es5", //To make bundle ecma5 compliant
+
       // CSS loaders
       rules: [
         {
@@ -61,13 +77,19 @@ module.exports = () => {
         },
         {
           test: /\.m?js$/,
-          exclude: /node_modules/,
+          //https://stackoverflow.com/questions/34404496/webpack-not-converting-es6-to-es5/59328252#59328252
+          // exclude: /node_modules/,
+          exclude: /(node_modules|bower_components)/,
           // We use babel-loader in order to use ES6.
           use: {
             loader: 'babel-loader',
             options: {
               presets: ['@babel/preset-env'],
-              plugins: ['@babel/plugin-proposal-object-rest-spread', '@babel/transform-runtime'],
+              plugins: [
+                '@babel/plugin-proposal-object-rest-spread', 
+                '@babel/transform-runtime'
+                //["@babel/plugin-transform-arrow-functions", { "spec": true }]
+              ],
             },
           },
         },
