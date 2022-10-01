@@ -22,26 +22,15 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template: './index.html',
-        title: 'Contact Cards'
+        title: 'Contact Cards',
+        favicon: './src/images/favicon.ico',
+
       }),
 
       // Injects our custom service worker
       new InjectManifest({
         swSrc: './src-sw.js',
         swDest: 'src-sw.js',
-
-
-        // swSrc: path.join(process.cwd(), '/app/resources/service-worker.js'),
-        // swDest: 'sw.js',
-        // exclude: [
-        //   /\.map$/,
-        //   /manifest$/,
-        //   /\.htaccess$/,
-        //   /src-sw\.js$/,
-        //   /service-worker\.js$/,
-        //   /sw\.js$/,
-        // ],
-
 
       }),
 
@@ -76,6 +65,10 @@ module.exports = () => {
           use: ['style-loader', 'css-loader'],
         },
         {
+          test: /\.(png|svg|jpg|jpeg|gif|ico)$/i,
+          type: 'asset/resource',
+        },
+        {
           test: /\.m?js$/,
           //https://stackoverflow.com/questions/34404496/webpack-not-converting-es6-to-es5/59328252#59328252
           // exclude: /node_modules/,
@@ -87,8 +80,7 @@ module.exports = () => {
               presets: ['@babel/preset-env'],
               plugins: [
                 '@babel/plugin-proposal-object-rest-spread', 
-                '@babel/transform-runtime'
-                //["@babel/plugin-transform-arrow-functions", { "spec": true }]
+                '@babel/transform-runtime',
               ],
             },
           },
