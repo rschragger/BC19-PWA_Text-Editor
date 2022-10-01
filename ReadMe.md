@@ -5,6 +5,10 @@
   [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
   
   A browser based text editor.
+
+  Github repository: https://github.com/rschragger/BC19-PWA_Text-Editor
+
+  Heroku Deployment: https://bc19-jate.herokuapp.com/
   
   ## Table of Contents
   
@@ -18,17 +22,20 @@
   
   ## Installation
    
-  Installation Instructions:
+  Installation Instructions for local deployment:
   - Fork/Clone from github
   - Run `npm install` from command line
-- Run `npm start` from command line. This will build and start all parts of the app
+- Run `npm start` from command line. This will build and start all parts of the app locally
   </p>
+
+  Installation not necessary for Heroku Deployed app, it is available at https://bc19-jate.herokuapp.com/
 
 ## Usage 
   Usage Instructions:
 - Run `npm start` to startup
-- Open Liveserver from http://127.0.0.1:5500/client/dist/index.html 
+- Open http://localhost:3001/
 -  Write text in browser
+- Text will be persisted into memory when your focus is switched outside of this web page
 </p>
 
 ## Credits
@@ -65,14 +72,21 @@
   - webpack-pwa-manifest
   - workbox-webpack-plugin
   
-  Tutorials Stack Overflow
+  Tutorials
+  - Stack Overflow
+  - Heroku.com
+  - www.pluralsight.com
+  - youtube.com
+  - W3Schools
+  - Github.com
+  - babeljs.io
+  - medium.com
+
   </p>
 
 ## License
    
-  This application is licensed under Creative Commons
-
-  CC0
+  This application is licensed under Creative Commons - CC0
   </p>
 
 ## Features
