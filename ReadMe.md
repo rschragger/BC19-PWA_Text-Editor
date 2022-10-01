@@ -4,7 +4,9 @@
   
   [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
   
-  A browser based text editor.
+  A browser based text editor. This text editor is a Progressive Web App that can be run offline and will still retain data that can be manipulated until one goes online again. The app can be installed on a local machine with all the same functionality.
+
+![Screenshot](instructions/Screen%20Shot%202022-10-01%20at%205.31.28%20pm.png)
 
   Github repository: https://github.com/rschragger/BC19-PWA_Text-Editor
 
